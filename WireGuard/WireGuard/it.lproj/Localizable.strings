@@ -300,6 +300,7 @@
 "macMenuManageTunnels" = "Gestisci i tunnel";
 "macMenuImportTunnels" = "Importa tunnel da file…";
 "macMenuAddEmptyTunnel" = "Aggiungi tunnel vuoto…";
+"macMenuScanQRCode" = "Scansiona il codice QR";
 "macMenuViewLog" = "Visualizza log";
 "macMenuExportTunnels" = "Esporta tunnel in Zip…";
 "macMenuAbout" = "Informazioni su WireGuard";

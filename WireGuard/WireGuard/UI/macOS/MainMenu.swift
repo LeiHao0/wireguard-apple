@@ -60,6 +60,8 @@ class MainMenu: NSMenu {
     private func createFileMenu() -> NSMenu {
         let menu = NSMenu(title: tr("macMenuFile"))
 
+        menu.addItem(withTitle: tr("macMenuScanQRCode"),
+            action: #selector(TunnelsListTableViewController.handleScanQRCodeAction), keyEquivalent: "a")
         menu.addItem(withTitle: tr("macMenuAddEmptyTunnel"),
             action: #selector(TunnelsListTableViewController.handleAddEmptyTunnelAction), keyEquivalent: "n")
         menu.addItem(withTitle: tr("macMenuImportTunnels"),

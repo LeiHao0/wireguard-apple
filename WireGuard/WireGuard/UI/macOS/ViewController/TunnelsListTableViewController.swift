@@ -29,6 +29,7 @@ class TunnelsListTableViewController: NSViewController {
 
         let menu = NSMenu()
         menu.addItem(imageItem)
+        menu.addItem(withTitle: tr("macMenuScanQRCode"), action: #selector(handleAddEmptyTunnelAction), keyEquivalent: "a")
         menu.addItem(withTitle: tr("macMenuAddEmptyTunnel"), action: #selector(handleAddEmptyTunnelAction), keyEquivalent: "n")
         menu.addItem(withTitle: tr("macMenuImportTunnels"), action: #selector(handleImportTunnelAction), keyEquivalent: "o")
         menu.autoenablesItems = false
@@ -149,6 +150,12 @@ class TunnelsListTableViewController: NSViewController {
             return selectTunnel(at: indexToSelect)
         }
         return false
+    }
+
+    @objc func handleScanQRCodeAction() {
+//        let tunnelEditVC = TunnelEditViewController(tunnelsManager: tunnelsManager, tunnel: nil)
+//        tunnelEditVC.delegate = self
+//        presentAsSheet(tunnelEditVC)
     }
 
     @objc func handleAddEmptyTunnelAction() {
